@@ -59,7 +59,7 @@ default = {
     'ignore maturity': False,        # if True, pretends card maturity is always zero
 
     # try playing fields in this order when using batch media player
-    'batch media fields': ['Video', 'Sound'],
+    'batch media fields': ['Video', 'Sound', 'Audio'],
 
     # configure morph man index algorithm
     'min good sentence length': 2,

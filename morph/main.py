@@ -120,8 +120,7 @@ def mkAllDb(all_db=None):
     query_results = db.execute(query)
 
     N_notes = len(query_results)
-    mw.progress.update(label='Generating all.db data',
-                      max=N_notes)
+    mw.progress.update(label='Generating all.db data')
 
     for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
         if i % 500 == 0:
@@ -271,8 +270,7 @@ def updateNotes(allDb):
     query_results = db.execute(query)
 
     N_notes = len(query_results)
-    mw.progress.update(label='Updating notes',
-                       max=N_notes)
+    mw.progress.update(label='Updating notes')
 
     for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
         ts = TAG.split(tags)
